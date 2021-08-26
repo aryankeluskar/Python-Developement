@@ -7,6 +7,14 @@ print('I am Aryan!')
 print('''Twinkle, twinkle, little star
 How I wonder what you are''')
 
+# Install an external module and use it to perform an operation of your interest.
+from playsound import playsound
+playsound('play.mp3')
+
+# Write a python program to print the contents of a directory using os module. Search online for the function which does that.
+import os
+print(os.listdir('D://D Drive//Python Developement'))
+
 # Use REPL and print the table of 5 using it.
 '''
 >>> 5*1
@@ -21,13 +29,6 @@ How I wonder what you are''')
 25
 '''
 
-# Install an external module and use it to perform an operation of your interest.
-from playsound import playsound
-playsound('play.mp3')
-
-# Write a python program to print the contents of a directory using os module. Search online for the function which does that.
-import os
-print(os.listdir('D://D Drive//Python Developement'))
 
 # Label the program written in problem 4 with comments.
 # Author: Aryan K
