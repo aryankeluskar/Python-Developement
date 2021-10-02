@@ -6,6 +6,8 @@ print(s, type(s))
 s='Aryan\'s Websites' #Escape Sequence
 b=", "
 
+print(f"This is easy concatenation{s}{b}{56}")
+
 # String Concat, Indexing, Slicing
 s1=" and his YouTube Channels Rock!"
 print(s+s1)
@@ -14,6 +16,8 @@ print(s[:5], s1[1:8], s1[-5:])  # :5 is same as 0:5. 6: is same as 6:end
 print(s[0:10:3]) #every 3rd character is printed in the given range
 
 # String Functions
+s="         hi, this is strip               "
+print(s.strip(" "))
 s="aryan is aryan, not aaryan, only aryan"
 print("Length:",len(s),b, s.endswith("yan"),b, s.count('a'),b, s.find('not'))
 print(s.replace('aryan','harry'),b, s.upper())
