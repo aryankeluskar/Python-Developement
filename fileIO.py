@@ -35,16 +35,16 @@ def game():
     return random.randint(1,100)
 
 f=open("practice.txt", "r")
-if(f.read()==""):
-    fw=open("practice.txt", "w")
-    fw.write(str(0))
-    fw.close()
+# if " " == f.read() :
+#     fw=open("practice.txt", "w")
+#     fw.write(str(0))
+#     fw.close()
 play=game()
 print("Read: "+f.read())
-# if(int(f.read())<play):
-#     print(f.read())
-#     print("High Score broken")
-#     fw=open("practice.txt", "w")
-#     fw.write(str(play))
-# fw.close()
+if(int(f.read())<play):
+    print(f.read())
+    print("High Score broken")
+    fw=open("practice.txt", "w")
+    fw.write(str(play))
+    fw.close()
 f.close()
